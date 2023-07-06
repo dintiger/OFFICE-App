@@ -13,7 +13,7 @@ const __dirname = path.dirname(__filename);
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT;
-
+console.log(process.env.MONGODB)
 app.use(cors());
 app.use(express.static(path.join(__dirname, "build")));
 app.use(express.json());
